@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Result</title>
+</head>
+<body>
+    <h1>Lista de Terrenos Disponibles</h1>
+    {% if terrenos %}
+    <ul>
+        {% for terreno in terrenos %}
+        <li>{{ terreno }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No data found.</p>
+    {% endif %}
+</body>
+</html>
